@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import '@/styles/globals.css'
 import { useEffect } from "react";
 import Link from "next/link";
 import { useSelector, useDispatch } from 'react-redux'
