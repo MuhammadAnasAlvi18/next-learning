@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import '@/styles/globals.css'
 import Header from '@/components/Header'
 import { useEffect, useState } from 'react'
 import Link from 'next/link';

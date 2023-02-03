@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import axios from "axios";
+import '@/styles/globals.css';
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
