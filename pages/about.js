@@ -22,8 +22,8 @@ const About = () => {
       <h2 className="text-center">COUNTER APP</h2>
       <h1 className="text-center">{count}</h1>
       <div className="counter_btn">
-      <Link href='javascript:void(0)' onClick={() => dispatch(increment())}>+</Link>
-      <Link href='javascript:void(0)' onClick={() => dispatch(decrement())}>-</Link>
+      <Link href='#' onClick={() => dispatch(increment())}>+</Link>
+      <Link href='#' onClick={() => dispatch(decrement())}>-</Link>
       </div>
     </div>
   )

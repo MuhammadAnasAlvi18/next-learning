@@ -197,3 +197,7 @@ a:focus{
   justify-content: center;
   align-items: center;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}

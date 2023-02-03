@@ -9,7 +9,7 @@ const Header = () => {
     <div className='container'>
     <div className='nav_bar'>
       <Link href='/'>
-      <Image src={logo} alt=''/>
+      <Image src={logo} alt='' priority/>
       </Link>
       <ul>
         <li>
@@ -25,7 +25,7 @@ const Header = () => {
           <Link href='/contact'>Contact</Link>
         </li>
       </ul>
-      <Link href='javascript:void(0)' className='header_btn'>Button</Link>
+      <Link href='#' className='header_btn'>Button</Link>
       <i className='fa fa-solid fa-bars'></i>
     </div>
     </div>
