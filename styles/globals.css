@@ -142,6 +142,10 @@ a:focus{
   color: #000;
 }
 
+.nav_bar ul li a{
+  color: #000 !important;
+}
+
 .nav_bar i{
   font-size: 28px;
   cursor: pointer;
