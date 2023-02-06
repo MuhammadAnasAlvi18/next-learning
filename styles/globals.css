@@ -139,6 +139,7 @@ a:focus{
 .nav_bar ul li{
   list-style: none;
   margin: 0 20px;
+  color: #000;
 }
 
 .nav_bar i{
