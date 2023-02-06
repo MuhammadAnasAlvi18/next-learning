@@ -155,6 +155,7 @@ a:focus{
   border-radius: 5px;
   border: 1px solid #000;
   transition: 0.6s ease;
+  text-transform: capitalize;
 }
 
 .header_btn:hover{
@@ -200,4 +201,77 @@ a:focus{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.contact_div{
+  width: 100%;
+}
+
+.contact_div input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.contact_div textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact_btn,
+.contact_btn:focus,
+.contact_btn:hover {
+  width: 15%;
+  display: block;
+  background: #000;
+  color: #fff;
+  padding: 15px 35px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.contact_btn::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 3px solid #fff;
+  border-left: 3px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 18%;
+  left: 40%;
+  display: none;
+  transform: translate(-50%, -50%);
+  animation: rotate 1s linear infinite;
+}
+
+.contact_btn.active{
+  color: #000;
+}
+
+.contact_btn.active::before{
+  display: block;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
