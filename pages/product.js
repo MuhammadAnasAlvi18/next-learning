@@ -1,26 +1,17 @@
 import Header from "@/components/Header";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
-
-export async function getStaticProps() {
-
-  const res = await fetch("https://official-joke-api.appspot.com/random_joke");
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  }
-}
-
-const Product = ({data}) => {
+const Product = () => {
 
    const [jokes, setJokes] = useState(null);
 
-   const getJokes = ()=>{
-    setJokes(data);
+   const getJokes = async ()=>{
+
+    const res = await fetch("https://official-joke-api.appspot.com/random_joke");
+    const data = await res.json();
+
+    data && setJokes(data);
    }
 
   return (
