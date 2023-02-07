@@ -9,8 +9,10 @@ export default function Home() {
   const [inpVal, setInpVal] = useState("");
 
   const addTodos = ()=>{
+    if(inpVal.length > 0){
     setTodos([...todos , inpVal]);
     setInpVal("");
+    }
   };
 
   return (
