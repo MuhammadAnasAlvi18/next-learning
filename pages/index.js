@@ -8,7 +8,8 @@ export default function Home() {
   const [todos , setTodos] = useState([]);
   const [inpVal, setInpVal] = useState("");
 
-  const addTodos = ()=>{
+  const addTodos = (e)=>{
+    e.preventDefault()
     if(inpVal.length > 0){
     setTodos([...todos , inpVal]);
     setInpVal("");

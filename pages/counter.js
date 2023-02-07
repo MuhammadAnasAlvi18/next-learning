@@ -22,8 +22,14 @@ const About = () => {
       <h2 className="text-center">COUNTER APP</h2>
       <h1 className="text-center">{count}</h1>
       <div className="counter_btn">
-      <Link href='#' onClick={() => dispatch(increment())}>+</Link>
-      <Link href='#' onClick={() => dispatch(decrement())}>-</Link>
+      <Link href='#' onClick={(e) => {
+        dispatch(increment())
+        e.preventDefault();
+      }}>+</Link>
+      <Link href='#' onClick={(e) => {
+        dispatch(decrement())
+        e.preventDefault();
+        }}>-</Link>
       </div>
     </div>
   )

@@ -6,7 +6,8 @@ const Product = () => {
 
    const [jokes, setJokes] = useState(null);
 
-   const getJokes = async ()=>{
+   const getJokes = async (e)=>{
+    e.preventDefault();
     setJokes(null);
 
     const res = await fetch("https://official-joke-api.appspot.com/random_joke");
