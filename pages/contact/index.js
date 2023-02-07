@@ -1,10 +1,13 @@
 import Header from "@/components/Header"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { addData } from "@/redux/reducers/contactSlice"
+import { useDispatch } from "react-redux"
 
 const contact = () => {
 
-  // const router = useRouter();
+  const dispatch = useDispatch();
+  const router = useRouter();
   const [isactive, setIsActive] = useState(false)
   const [user , setUser] = useState({
     fname: "",
@@ -22,20 +25,14 @@ const contact = () => {
   }
 
   const submitForm = (e)=>{
-
     e.preventDefault();
-
     setIsActive(true)
-    setUser(()=> ({
-    fname: "",
-    lname: "",
-    email: "",
-    phone: "",
-    message: ""
-    }))
+
+    user && dispatch(addData(user));
 
     setTimeout(()=>{
     setIsActive(false)
+    user && router.push(`contact/${user.fname + user.lname}`);
     },3000)
 
   }

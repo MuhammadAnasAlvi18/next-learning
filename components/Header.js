@@ -17,19 +17,19 @@ const Header = () => {
       </Link>
       <ul>
         <li>
-          <Link href='/'>Home</Link>
+          <Link href='/'>Todo App</Link>
         </li>
         <li>
-          <Link href='/about'>About</Link>
+          <Link href='/counter'>Counter App</Link>
         </li>
         <li>
-          <Link href='/product'>Product</Link>
+          <Link href='/jokes'>Random Jokes Generator</Link>
         </li>
         <li>
           <Link href='/contact'>Contact</Link>
         </li>
       </ul>
-      <Link href='#' className='header_btn'>{router.pathname === '/' ? "home" : router.pathname.split("/")}</Link>
+      <Link href='#' className='header_btn'>Button</Link>
       <i className='fa fa-solid fa-bars'></i>
     </div>
     </div>
