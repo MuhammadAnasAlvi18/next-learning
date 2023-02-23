@@ -74,11 +74,6 @@ const contact = () => {
         </div>
       </div>
       <a href="#" className={isactive ? 'contact_btn active' : 'contact_btn'} onClick={submitForm}>Submit</a> 
-      <h5>{user.fname}</h5>
-      <h5>{user.lname}</h5>
-      <h5>{user.email}</h5>
-      <h5>{user.phone}</h5>
-      <h5>{user.message}</h5>
       </div>
     </div>
   )
